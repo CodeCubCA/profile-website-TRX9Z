@@ -2089,6 +2089,297 @@
                 font-size: 0.8rem;
             }
         }
+
+        /* Projects Section Styles */
+        .projects-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .projects-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #FFD700;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 700;
+        }
+
+        .project-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.4s ease;
+            margin-top: 2rem;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 215, 0, 0.5);
+        }
+
+        .project-left {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(0, 191, 255, 0.2), rgba(138, 43, 226, 0.2));
+        }
+
+        .project-screenshot-container {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .project-screenshot-container:hover {
+            transform: scale(1.05);
+        }
+
+        .project-screenshot {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .project-right {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .project-title {
+            font-size: 2rem;
+            color: #FFD700;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+            font-weight: 700;
+        }
+
+        .project-description {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-bottom: 2rem;
+        }
+
+        .tech-badge {
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .tech-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .tech-badge.html {
+            background: linear-gradient(135deg, #E34F26, #F06529);
+            color: white;
+        }
+
+        .tech-badge.css {
+            background: linear-gradient(135deg, #1572B6, #33A9DC);
+            color: white;
+        }
+
+        .tech-badge.js {
+            background: linear-gradient(135deg, #F7DF1E, #F0DB4F);
+            color: #323330;
+        }
+
+        .tech-badge.canvas {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            color: white;
+        }
+
+        .tech-badge.responsive {
+            background: linear-gradient(135deg, #4ECDC4, #44A08D);
+            color: white;
+        }
+
+        .tech-badge.animations {
+            background: linear-gradient(135deg, #C471F5, #FA71CD);
+            color: white;
+        }
+
+        .tech-badge.git {
+            background: linear-gradient(135deg, #F05032, #E84E31);
+            color: white;
+        }
+
+        .project-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .repo-btn {
+            background: linear-gradient(135deg, #24292e, #444d56);
+            color: white;
+        }
+
+        .repo-btn:hover {
+            background: linear-gradient(135deg, #2f363d, #586069);
+        }
+
+        .live-btn {
+            background: linear-gradient(135deg, #00D9FF, #0099CC);
+            color: white;
+        }
+
+        .live-btn:hover {
+            background: linear-gradient(135deg, #00B8D4, #0086B3);
+        }
+
+        .github-icon {
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+        }
+
+        /* AI Chatbot Project Specific Styles */
+        .ai-chatbot-card {
+            margin-top: 2rem;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+
+        .ai-chatbot-card:hover {
+            box-shadow: 0 12px 48px rgba(168, 85, 247, 0.4);
+            border-color: rgba(168, 85, 247, 0.6);
+        }
+
+        .ai-gradient {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2));
+        }
+
+        .ai-title {
+            color: #C084FC;
+        }
+
+        .tech-badge.python {
+            background: linear-gradient(135deg, #3B82F6, #2563EB);
+            color: white;
+        }
+
+        .tech-badge.streamlit {
+            background: linear-gradient(135deg, #EF4444, #DC2626);
+            color: white;
+        }
+
+        .tech-badge.groq {
+            background: linear-gradient(135deg, #A855F7, #9333EA);
+            color: white;
+        }
+
+        .tech-badge.streamlit-cloud {
+            background: linear-gradient(135deg, #EC4899, #DB2777);
+            color: white;
+        }
+
+        .ai-live-btn {
+            background: linear-gradient(135deg, #A855F7, #EC4899);
+            color: white;
+        }
+
+        .ai-live-btn:hover {
+            background: linear-gradient(135deg, #9333EA, #DB2777);
+        }
+
+        /* Responsive Design for Projects */
+        @media (max-width: 968px) {
+            .project-card {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .project-left {
+                padding: 1.5rem;
+            }
+
+            .projects-title {
+                font-size: 2rem;
+            }
+
+            .project-title {
+                font-size: 1.6rem;
+            }
+
+            .project-description {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .projects-section {
+                padding: 3rem 1rem;
+            }
+
+            .projects-title {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+
+            .project-right {
+                padding: 1.5rem;
+            }
+
+            .project-buttons {
+                flex-direction: column;
+            }
+
+            .project-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .tech-badge {
+                font-size: 0.8rem;
+                padding: 0.35rem 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -2100,6 +2391,7 @@
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#hollowKnightSection" class="nav-link">Hollow Knight</a></li>
                 <li class="nav-item"><a href="#gardenSection" class="nav-link">Garden</a></li>
+                <li class="nav-item"><a href="#projectsSection" class="nav-link">Projects</a></li>
             </ul>
         </div>
     </nav>
@@ -2500,6 +2792,85 @@
             </div>
 
             <div id="achievements"></div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects-section" id="projectsSection">
+            <h2 class="projects-title">🚀 My Projects 🚀</h2>
+
+            <!-- Personal Portfolio Website Project Card -->
+            <div class="project-card portfolio-card">
+                <div class="project-left">
+                    <div class="project-screenshot-container">
+                        <img src="img/Profile.png" alt="Personal Portfolio Website Screenshot" class="project-screenshot" />
+                    </div>
+                </div>
+                <div class="project-right">
+                    <h3 class="project-title">Personal Portfolio Website</h3>
+                    <p class="project-description">
+                        An interactive portfolio website featuring two fully-functional browser games built with vanilla JavaScript and HTML5 Canvas.
+                        Includes a Hollow Knight-inspired platformer with real-time combat mechanics, and an engaging garden simulation game with inventory management,
+                        upgrade systems, and progression tracking. The site showcases modern web development techniques including smooth animations,
+                        responsive design, intersection observers for scroll effects, and dynamic DOM manipulation.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge html">HTML5</span>
+                        <span class="tech-badge css">CSS3</span>
+                        <span class="tech-badge js">JavaScript</span>
+                        <span class="tech-badge canvas">Canvas API</span>
+                        <span class="tech-badge responsive">Responsive Design</span>
+                        <span class="tech-badge animations">CSS Animations</span>
+                        <span class="tech-badge git">Git</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/CodeCubCA/profile-website-TRX9Z" target="_blank" class="project-btn repo-btn">
+                            <svg class="github-icon" height="20" width="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            Repository
+                        </a>
+                        <a href="https://elias.codecub.org" target="_blank" class="project-btn live-btn">
+                            🚀 Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gaming Assistant AI Chatbot Project Card -->
+            <div class="project-card ai-chatbot-card">
+                <div class="project-left ai-gradient">
+                    <div class="project-screenshot-container">
+                        <img src="img/ai-chatbox.png" alt="Gaming Assistant AI Chatbot Screenshot" class="project-screenshot" />
+                    </div>
+                </div>
+                <div class="project-right">
+                    <h3 class="project-title ai-title">Gaming Assistant</h3>
+                    <p class="project-description">
+                        An intelligent AI-powered chatbot built with Streamlit and Groq API that provides instant, personalized assistance.
+                        Features real-time conversation with context awareness, deployed to the cloud with continuous integration.
+                        Perfect for students seeking instant help with homework, detailed explanations, and comprehensive learning support
+                        across various subjects including math, science, literature, and more.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge python">Python</span>
+                        <span class="tech-badge streamlit">Streamlit</span>
+                        <span class="tech-badge groq">Groq API</span>
+                        <span class="tech-badge git">Git</span>
+                        <span class="tech-badge streamlit-cloud">Streamlit Cloud</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/CodeCubCA/ai-chatbox-TRX9Z" target="_blank" class="project-btn repo-btn">
+                            <svg class="github-icon" height="20" width="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            Repository
+                        </a>
+                        <a href="https://ai-chatbox-elias-codecub.streamlit.app/" target="_blank" class="project-btn ai-live-btn">
+                            🤖 Try Live
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
